@@ -5,7 +5,7 @@ import struct
 import time
 import pygame
 import distutils.util
-from PyNTR import PyNTR
+from PyNTR.PyNTR import PyNTR
 
 class InputState:
 
