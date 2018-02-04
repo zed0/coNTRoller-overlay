@@ -8,7 +8,7 @@ git submodule update --init --recursive
 pip install -r requirements.txt
 
 #Find the local IP of your 3DS and replace it below
-./coNTRoller-overlay.py 192.168.0.100
+python coNTRoller-overlay.py 192.168.0.100
 ```
 
 ## Example output
