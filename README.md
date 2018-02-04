@@ -15,6 +15,12 @@ pip install -r requirements.txt
 
 ![example](https://raw.githubusercontent.com/zed0/coNTRoller-overlay/master/example.png)
 
+## Todo list
+
+- Display where the touchscreen is being touched
+- Display extra buttons on the New 3DS
+- Theming?
+
 ## Credits
 
 - [zed0](https://github.com/zed0)
