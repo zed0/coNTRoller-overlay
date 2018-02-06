@@ -3,6 +3,7 @@ Display 3DS controller inputs via NTR debugging information
 
 ## Getting started
 
+Clone the repository via git (as the .zip doesn't include submodules) then navigate to the root of the repository and run:
 ```bash
 git submodule update --init --recursive
 pip install -r requirements.txt
