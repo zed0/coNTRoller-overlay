@@ -5,6 +5,8 @@ import struct
 import time
 import pygame
 import distutils.util
+import sys
+import os
 from PyNTR.PyNTR import PyNTR
 
 class InputState:
@@ -64,6 +66,11 @@ def color(s):
 	except:
 		raise argparse.ArgumentTypeError('Color must be r,g,b')
 
+def resource_path(relative):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative)
+    return os.path.join(relative)
+
 if __name__ == '__main__':
 
 	parser = argparse.ArgumentParser(description='Input display for NTR connected 3DS')
@@ -81,8 +88,8 @@ if __name__ == '__main__':
 
 	input_state = InputState(client)
 
-	overlay_img      = pygame.image.load('ds_overlay.png')
-	circle_stick_img = pygame.image.load('circle_stick.png')
+	overlay_img      = pygame.image.load(resource_path('ds_overlay.png'))
+	circle_stick_img = pygame.image.load(resource_path('circle_stick.png'))
 
 	display_width = overlay_img.get_width()
 	display_height = overlay_img.get_height()

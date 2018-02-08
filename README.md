@@ -16,6 +16,16 @@ python coNTRoller-overlay.py 192.168.0.100
 
 ![example](https://raw.githubusercontent.com/zed0/coNTRoller-overlay/master/example.png)
 
+## Building a standalone executable
+
+Once the software is working a standalone executable with assets bundled can be built using the following:
+```bash
+pip install pyinstaller
+pyinstaller coNTRoller-overlay.spec
+```
+
+This will place a standalone executable in the `dist` directory.
+
 ## Todo list
 
 - Display where the touchscreen is being touched
